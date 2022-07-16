@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../Fonts/Roboto-Regular.ttf);
+}
+
+body{
+    font-family: Roboto;
+}
+
+header{
+    width: 100%;
+    height: 94px;
+    background-color: #000000;
+    padding: 12px 100px; 
+}
+
+h1{
+    float: left;
+    height: 70px;
+    width: 70px;
+    background-image: url(../Img/music-note.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-indent: -999999999999px;
+    margin-right: 168px;
+}
+
+h1 a{
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+
+h1:hover{
+    background-image: url(../Img/music-note2.png);
+}
+
+header nav{
+    margin-top: 24px;
+}
+
+
+header li{
+    float: left;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+
+
+header li a{
+    padding: 5px 10px;
+    color: #ffffff;
+    position: relative;
+}
+
+
+header li a::before{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 1s;
+}
+
+header li a:hover:before{
+    width: 100%;
+}
+
+.song:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px #000000;
+}
+
+.todayshits{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.todayshits h2{
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.todayshits article{
+    width: 300px;
+    float: left;
+    margin-right: 138px;
+    margin-bottom: 22px;
+}
+
+.todayshits article section{
+    width: 100%;
+    height: 244px;
+    border: 1px solid #000000;
+    margin-bottom: 10px;
+    position: relative;
+    background-image: url(../Img/sound.png);
+    background-size: 25%;
+    background-repeat: repeat-x;
+    background-position-y: 56px;
+    padding: 146px 0 0 12px;
+}
+
+.todayshits article section h3{
+    margin-bottom: 14px;
+}
+
+.goon{
+    color: #000000;
+}
+
+.meore{
+    clear: both;
+}
+
+.meore h2{
+    margin-bottom: 22px;
+}
+
+.meore article{
+    margin-bottom: 100px;
+}
+
+.like{
+    width: 50px;
+    height: 50px;
+    background-image: url(../Img/like.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.like:hover{
+    background-image: url(../Img/like-2.png)
+}
+
+.social{
+    width: 50px;
+    height: 100px;
+    overflow: hidden;
+    position: fixed;
+    top: 214px;
+    right: 0;
+}
+
+.fb, .ig{
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.fb{
+    background-image: url(../Img/fb.png);
+}
+
+.fb:hover{
+    background-image: url(../Img/facebook.png);
+}
+
+.ig{
+    background-image: url(../Img/instagram.png);
+}
+
+.ig:hover{
+    background-image: url(../Img/instagram-c.png);
+}
+
+.fb a, .ig a{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+footer{
+    width: 100%;
+    height: 354px;
+    background-color: #000000;
+    padding: 28px 0 18px 0;
+}
+
+.logoft{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.logoft img{
+    width: 100%;
+    height: 100%;
+}
+
+.footerlinks{
+    top: 200px;
+    left: 50%;
+}
+
+footer ul{
+    text-align: center;
+    font-size: 18px;
+    margin: 24px 0 32px 0;
+}
+
+footer li{
+    padding: 4px 
+}
+
+footer li a{
+    color: #ffffff;
+}
+
+.rights{
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* ------innerarticle style--------- */
+
+.innerarticle .playlists{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.innerarticle .plbox{
+    padding: 12px;
+}
+
+.innerarticle .plbox:hover{
+    cursor: pointer;
+    background-color: #dddddd;
+    box-shadow: 0 0 20px #a4a4a4;
+}
+
+.innerarticle .playlists article{
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 46px;
+}
+
+.innerarticle .playlist{
+    height: 300px;
+    width: 300px;
+    text-align: center;
+}
+
+.innerarticle h3{
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+.innerarticle .names{
+    float: left;
+    margin-right: 16px;
+}
+
+.innerarticle article .playlist li{
+    padding-bottom: 8px;
+    font-size: 18px;
+}
+
+.innerarticle .names li a{
+    color: #000000;
+}
+
+
+.innerarticle .sound2{
+    clear: both;
+    width: 260px;
+    height: 65px;
+    background-image: url(../Img/sound.png);
+    background-size: 65px;
+    background-repeat: repeat-x;
+    margin: auto;
+    margin-bottom: 100px;
+    
+}
+
+.innerarticle .second article{
+    margin-bottom: 140px;
+}
+
+.innerarticle h2{
+text-align: center;
+margin-bottom: 144px;
+}
